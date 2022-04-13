@@ -1,12 +1,13 @@
 package ru.geekbrains.lesson1;
 
+import java.awt.*;
+
 public class FirstApp {
     public static void main(String[] args) {
         FirstApp.printThreeWords();
         FirstApp.checkSumSign();
         FirstApp.printColor();
         FirstApp.compareNumbers();
-
 
     }
 
@@ -31,24 +32,21 @@ public class FirstApp {
     }
 
     public static void printColor() {
-        int value = -250;
+        int value = 1;
         if (value <= 0) {
             System.out.println("Красный");
-        }
-        else if (value >= 1 && value <= 100) {
+        } else if (value > 0 && value <= 100) {
             System.out.println("Желтый");
-        }
-       else{
+        } else {
             System.out.println("Зеленый");
-       }
+        }
     }
     public static void compareNumbers() {
-        int a = 30;
-        int b = 50;
+        int a = 20;
+        int b = 30;
         if (a >= b) {
             System.out.println("a >= b");
-        }
-        else if (a < b) {
+        } else {
             System.out.println("a < b");
         }
     }
