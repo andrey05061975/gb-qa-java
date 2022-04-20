@@ -2,11 +2,17 @@ package ru.geekbrains.lesson2;
 
 public class MainConstruction {
     public static void main(String[] args) {
-        MainConstruction.within10and20(-10, 20);
-        MainConstruction.isPositiveOrNegative(-10);
-        boolean result1 = MainConstruction.isNegative(10);
-        System.out.println("Результат проверки: " + result1);
-        MainConstruction.printWordNTimes("привет", 8);
+        within10and20(-10, 20);
+        isPositiveOrNegative(-10);
+
+        boolean checkedIsNegative = isNegative(-10);
+        if (checkedIsNegative) {
+            System.out.println("Отрицательное число " + checkedIsNegative);
+        } else {
+            System.out.println("Положительное число " + checkedIsNegative);
+        }
+
+        printWordNTimes("привет", 8);
     }
 
 
@@ -29,18 +35,14 @@ public class MainConstruction {
     }
 
     public static boolean isNegative(int number) {
-        if (number >= 0) {
-            return false;
-        } else {
-            return true;
-        }
+        return number < 0;
     }
 
     public static void printWordNTimes(String word, int times) {
         for (int i = 1; i <= times; i++) {
             System.out.println("[" + i + "]: " + word);
         }
+
     }
 }
-
 
