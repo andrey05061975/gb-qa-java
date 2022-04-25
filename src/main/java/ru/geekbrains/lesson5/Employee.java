@@ -1,12 +1,12 @@
 package ru.geekbrains.lesson5;
 
 public class Employee {
-    public String name;
-    public String post;
-    public String email;
-    public String phoneNumber;
-    public int salary;
-    public int age;
+    private  String name;
+    private  String post;
+    private  String email;
+    private  String phoneNumber;
+    private  int salary;
+    private  int age;
 
     public int getAge() {
         return age;
