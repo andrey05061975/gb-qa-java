@@ -2,11 +2,6 @@ package ru.geekbrains.lesson7;
 
 import java.util.Scanner;
 
-/**
- * Created by Aleksandr Gladkov [Anticisco]
- * Date: 28.04.2022
- */
-
 public class Lesson07 {
     public static Scanner scanner = new Scanner(System.in);
 
